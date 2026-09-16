@@ -1,0 +1,154 @@
+/* Базовий скидання стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #2b2118;
+  background: #fdfaf5;
+}
+
+/* Хедер та навігація */
+header {
+  background: #3b2417;
+  padding: 16px 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #fdfaf5;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fdfaf5;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Основний контент */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #3b2417;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 28px 0 12px;
+  color: #3b2417;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 16px 0 8px;
+  color: #5c4030;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+/* Hero-блок на головній */
+.hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 28px;
+  background: #a5682f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #8a5427;
+}
+
+/* Картки */
+.cards, .blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* Меню-список */
+.menu-list li {
+  list-style: none;
+  margin-left: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #e5dccf;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Футер */
+footer {
+  background: #3b2417;
+  color: #fdfaf5;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
